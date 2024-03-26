@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    background: #82ee82;
+}
+
+.topo {
+    padding: 30px;
+    text-align: center;
+    background-color: #0cfd04;
+}
+
+.topo h1 {
+    font-size: 50px;
+}
+
+.menutopo {
+    text-align: center;
+    background-color: rgb(5, 189, 66);
+    overflow: hidden;
+    position: sticky;
+    top: 10px;
+}
+
+.menutopo ul {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menutopo ul li {
+    float: left;
+}
+
+.menutopo a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: right;
+    border-radius: 30px;
+}
+
+.menutopo a:hover {
+    background-color: #82ee82;
+    color: #000;
+    font-weight: bold;
+}
+
+.corpo {
+    width: 1024px;
+    margin: 10px auto;
+}
+
+.corpo::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.esquerda {
+    width: 75%;
+    float: left;
+}
+
+.direita {
+    width: 22%;
+    float: right;
+    padding: 30px;
+    background-color: rgb(87, 219, 75);
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(5, 189, 66);
+}
+
+.destaque{
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.imagens img{
+    width:100%
+}
+
+@media screen and (max-width:1024px){
+    .corpo{
+        width: 100%;
+        margin: 0px;
+        padding: 5px;
+    }
+
+    .esquerda, .direita{
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .menutopo ul li, .menutopo a{
+        float: none;
+        width: 100%;
+    }
+    
+}
+
